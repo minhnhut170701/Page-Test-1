@@ -1,0 +1,474 @@
+*{
+    box-sizing: border-box;
+}
+body ,html{
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    margin-right: 0;
+    margin-left: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+a,
+p {
+  font-family: "Alata", sans-serif;
+}
+
+div{
+    display: block;
+}
+body header{
+    width: 100%;
+    height: 500px;
+    background-image: url(desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -1rem;
+    right: 0;
+
+}
+.toggle-icon{
+    position: fixed;
+    top: .75rem;
+    right: 1rem;
+    display: none   ;
+    flex-direction: column;
+    justify-content: space-between;
+     width: 30px;
+     height: 21px;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header nav ul{
+    position: relative;
+    top: 0;
+}
+header nav h2{
+    color: white;
+    font-size: 1.5rem;
+     position: absolute;
+    left: 5rem;
+    top: 0.5rem;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 30px;
+    cursor: pointer;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover{
+    background-color: #FFFFF445;
+}
+
+.nav-box li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+.nav-box ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+
+.box-top{
+    width:40%;
+    height: auto;
+    border: 2px solid white;
+    word-wrap:break-word;
+    position: absolute;
+    left: 8rem;
+
+}
+
+.box-top p{
+    position: relative;
+    left: 3rem;
+    bottom: 2rem;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+
+main{
+    max-width: 100%;
+    max-height: 600px;
+    position: relative;
+    
+}
+
+main .body-introduc{
+    z-index: -1;
+    position: relative;
+    left: 15rem;
+}
+
+main .box-text{
+    border: none;
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    position:absolute;
+    top: 40%;
+    left: 53%;
+    display: block;
+
+}
+
+main .box-text h3{
+    text-align: center;
+    font-size: 2.8rem;
+}
+main .box-text p{
+    line-height: 25px;
+    position: relative;
+    font-size: 1.1rem;
+    left: 30px;
+    top: -20px;
+}
+.mobile{
+    display: none;
+}
+
+.box-end{
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    height:auto;
+    word-wrap: break-word;
+  
+
+}
+
+.box-end .foo-top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 63%;
+    left: 15rem;
+
+}
+
+.box-end .foo-img{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    width: 64%;
+    position: relative;
+    left: 15rem;
+    top: 4rem;
+   max-height: 100%;
+}
+
+.img-edit{
+    width: 100%;
+    height: 400px;
+}
+.box-end .foo-img .img-edit img{
+    width: 224px;
+    height: 393px;
+    position: relative;
+    filter: opacity(85%);
+}
+
+.text{
+    position:relative;
+    width: 100%;
+    height: 393px;
+    top: -25rem;
+    color: white;
+    bottom: -300px;
+
+}
+
+
+.img-edit:hover{
+     opacity:70%;
+}
+.text:hover {
+    color: black;
+  }
+
+
+.text h4{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 75%;
+    left: 3rem;
+
+}
+
+.foo-top .btn{
+    position: relative;
+    top: 0.5rem;
+    width: 100px;
+    height: 30px;
+    background-color: white ;
+    border: 1px solid black
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+body .fooder{
+    border-style: solid;
+    position: relative;
+    top: 7rem;
+   width: 100%;
+   height: 200px;
+   background-color: black;
+   display: flex;
+    justify-content: space-between;
+    
+
+}
+.fooder .menu{
+    display: block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 10rem;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.fooder .menu b{
+    position: relative;
+    left: 4rem;
+    color: white;
+}
+
+.fooder .menu ul{
+    display: flex;
+    width:100%;
+    list-style: none;
+}
+
+.fooder .menu ul li a{
+    color: white;
+    padding: 20px;
+}
+ 
+.menu li a:hover {
+    background-color: black;
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+.fooder .logo-end{
+    position: relative;
+    left: 8%;
+   padding: 30px;
+}
+
+.logo-end .logo{
+    position: relative;
+    margin-top: 30px;
+}
+
+.menu-hide{
+    z-index: 2;
+    width: 25%;
+    position:fixed;
+    background-color: black;
+    height: auto;
+    padding: 30px;
+    left: 40%;
+    display: none;
+}
+
+.menu-hide ul{
+    text-align: center;
+    list-style: none;
+    position: relative;
+    left: -10px;
+}
+
+.menu-hide ul li{
+    padding: 10px;
+}
+
+.menu-hide .icon{
+    color: red;
+    margin-left: 85%;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    
+}
+
+.menu-hide button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-hide.show{
+    display: block;
+}
+
+.fooder .logo-text{
+    color: white;
+    margin-top: 80px;
+    position: relative;
+    right: 16%;
+}
+
+@media (max-width: 800px) {
+
+    body header{
+        background-image: url(mobile/image-hero.jpg);
+        height: 600px;
+    }
+    .toggle-icon{
+        display: flex;
+        right: 3rem;
+        top: 1.5rem;
+    }
+
+    .nav-box ul{
+       display: none;
+    }
+    .box-top{
+       width: 80%;
+       left: 4rem;
+       top: 30%;
+       height: auto;
+    }
+    
+    .box-top p{
+        font-size: 3rem;
+        top: 10px;
+        left: 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .box-text{
+        position: relative;
+        left: -33px;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+        
+    }
+    
+    .box-text p{
+        position: absolute;
+        right: 70%
+    }
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        position: relative;
+        left: -220px;
+    }
+
+    .body-introduc{
+        background-image: url(mobile/image-interactive.jpg);
+        width: 100px;
+    }
+
+    .box-end{
+        position: relative;
+        top: 7rem;
+        width: 100%;
+    }
+    .box-end .foo-top{
+        width: 100%;
+        position: relative;
+        left: 0;
+
+    }
+
+    .box-end .foo-img{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+    }
+    .box-end .foo-img .img-edit{
+        top: 0;
+        min-height: 100%;
+        height: 250px;
+        width: 100%;
+        
+    }
+    .box-end .foo-img .img-edit img{
+        width: auto;
+        padding: 10px;
+        height: 250px;
+    }
+    .img-edit .text{
+        left: -45%;
+        width: 600px;
+        height: 235px;
+        margin-top: 150px;        
+    }
+    .img-edit .text h4{
+        left: 0;
+        top: 8rem;
+        position:relative;
+
+    }
+
+    .fooder{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .fooder .logo-text{
+        position: absolute;
+        color: white;
+        top: 60%;
+        left: 65%;
+        margin-top: 0;
+    }
+
+    .fooder .logo-end{
+        top: -30px;
+    }
+    .fooder .menu{
+        left: 0;
+    }
+
+    .menu-hide{
+        top: 5rem;
+        width: 50%;
+        left: 25%;
+    }
+
+
+}
